@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio de Valentin Simon - Développeur en formation à EPITECH, spécialisé en Python, Django, Java et SQL" />
+  <title>Valentin Simon - Portfolio Développeur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo" aria-label="Portfolio Valentin Simon">
+      <span>Val</span><span class="accent">Simon</span>
+    </h1>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="nav-link" href="#home" aria-current="page">Accueil</a>
+      <a class="nav-link" href="#skills">Compétences</a>
+      <a class="nav-link" href="#projects">Projets</a>
+      <a class="nav-link" href="#about">À propos</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <main id="app" class="app">
+    <!-- HOME -->
+    <section id="home" class="section hero-section" tabindex="-1">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/200x200/003d14/00ff41?text=VS" alt="Valentin Simon" class="profile-pic" />
+        </div>
+        <div class="hero-text">
+          <h2>Valentin Simon</h2>
+          <p class="catchphrase">Développeur en formation | Passionné par l'IA et le back-end</p>
+          <p>Étudiant en Pré-MSc à EPITECH Toulouse, je développe des solutions web robustes et innovantes.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+            <a href="cv_valentin_simon.pdf" download class="btn btn-secondary">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+              Télécharger CV
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="badges">
+        <li>Python</li>
+        <li>Django</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>Git</li>
+        <li>Postgres</li>
+        <li>REST API</li>
+      </ul>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="section" tabindex="-1" hidden>
+      <h2>Compétences & Progression</h2>
+      <p>Voici une auto-évaluation de mes compétences techniques actuelles et de leur évolution.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Back-end</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Python / Django</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <p class="skill-note">Projet Pot L'Emploi : gestion complète d'un job board avec authentification, uploads et base de données.</p>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>SQL / PostgreSQL</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <p class="skill-note">Conception de schémas relationnels, requêtes complexes et optimisation.</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>REST API</span>
+              <span class="skill-level">65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 65%"></div>
+            </div>
+            <p class="skill-note">Création d'APIs RESTful avec Django REST Framework.</p>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Programmation</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Java</span>
+              <span class="skill-level">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+            <p class="skill-note">POO, structures de données et algorithmes classiques.</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Git / GitHub</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <p class="skill-note">Versioning, branches, merge et workflow collaboratif.</p>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Front-end</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>HTML / CSS</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <p class="skill-note">Responsive design, animations et bonnes pratiques SEO.</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span class="skill-level">55%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 55%"></div>
+            </div>
+            <p class="skill-note">DOM manipulation, événements et animations interactives.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-analysis">
+        <h3>Analyse de ma progression</h3>
+        <p><strong>Forces :</strong> Solide maîtrise du back-end Python/Django, bonne compréhension des bases de données relationnelles et des principes REST. Capacité à structurer des projets complexes.</p>
+        <p><strong>Axes d'amélioration :</strong> Approfondir mes connaissances en JavaScript moderne (React, Vue.js), explorer le DevOps (Docker, CI/CD) et renforcer mes compétences en IA/Machine Learning.</p>
+        <p><strong>Objectifs :</strong> Obtenir une alternance en 2026 dans une entreprise innovante, devenir développeur full-stack avec une spécialisation en IA.</p>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projects" class="section" tabindex="-1" hidden>
+      <h2>Projets Réalisés</h2>
+      <p>Une sélection de mes meilleurs travaux démontrant ma progression et mes compétences techniques.</p>
+      
+      <div class="cards">
+        <article class="card project-card">
+          <div class="project-header">
+            <h3>Pot L'Emploi</h3>
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <p>Plateforme de job board complète avec gestion d'utilisateurs (candidats/recruteurs), système d'authentification, publication d'annonces, candidatures et uploads de CV.</p>
+          <div class="project-details">
+            <p><strong>Défis techniques :</strong> Gestion des permissions par rôle, upload sécurisé de fichiers, requêtes SQL optimisées.</p>
+            <p><strong>Résultat :</strong> Application fonctionnelle déployée avec une interface utilisateur intuitive.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Valentin-sim" class="project-link" target="_blank" rel="noopener">Voir sur GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-header">
+            <h3>Portfolio Interactif</h3>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Animations</span>
+            </div>
+          </div>
+          <p>Site personnel responsive avec navigation fluide, animations de portail inspirées de Rick & Morty et design moderne flat.</p>
+          <div class="project-details">
+            <p><strong>Défis techniques :</strong> Animations CSS complexes, gestion du state JavaScript, responsive design.</p>
+            <p><strong>Résultat :</strong> Portfolio original qui se démarque visuellement tout en restant accessible.</p>
+          </div>
+          <div class="project-links">
+            <a href="#home" class="project-link">Vous y êtes ! 🎉</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-header">
+            <h3>Jeu 2D Prototype</h3>
+            <div class="project-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Game Design</span>
+            </div>
+          </div>
+          <p>Prototype de jeu 2D avec mécaniques de plateforme, système de collectibles et assets graphiques personnalisés.</p>
+          <div class="project-details">
+            <p><strong>Défis techniques :</strong> Physics engine, gestion des collisions, optimisation des performances.</p>
+            <p><strong>Résultat :</strong> Gameplay fonctionnel démontrant les bases du développement de jeux vidéo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="section" tabindex="-1" hidden>
+      <h2>À propos de moi</h2>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Parcours</h3>
+          <p>Actuellement en Pré-MSc à <strong>EPITECH Toulouse</strong>, je suis passionné par le développement logiciel et particulièrement intéressé par l'intelligence artificielle et les architectures back-end robustes.</p>
+          <p>Mon parcours m'a permis de travailler sur des projets variés, du web au développement de jeux, en passant par la gestion de bases de données complexes.</p>
+        </div>
+
+        <div class="about-text">
+          <h3>Ma philosophie professionnelle</h3>
+          <p>Je crois fermement en l'apprentissage continu et en l'importance de la qualité du code. Pour moi, développer ne se limite pas à faire fonctionner une application : il s'agit de créer des solutions maintenables, évolutives et élégantes.</p>
+          <p>J'aime collaborer en équipe, partager mes connaissances et apprendre des autres. La veille technologique et l'expérimentation font partie intégrante de ma démarche.</p>
+        </div>
+
+        <div class="about-text">
+          <h3>Objectifs</h3>
+          <p><strong>Court terme :</strong> Obtenir une alternance dès 2026 dans une entreprise innovante où je pourrai contribuer à des projets d'envergure tout en continuant à développer mes compétences.</p>
+          <p><strong>Long terme :</strong> Devenir développeur full-stack avec une expertise en IA, contribuer à des projets open-source et potentiellement créer mes propres solutions technologiques.</p>
+        </div>
+
+        <div class="about-text">
+          <h3>Centres d'intérêt</h3>
+          <ul class="interests-list">
+            <li>🤖 Intelligence artificielle et Machine Learning</li>
+            <li>🎮 Développement de jeux vidéo</li>
+            <li>📚 Lecture de documentation technique</li>
+            <li>🛠️ Contribution open-source</li>
+            <li>🎨 Design d'interfaces utilisateur</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" tabindex="-1" hidden>
+      <h2>Me Contacter</h2>
+      <p>Vous avez un projet, une opportunité d'alternance ou simplement envie d'échanger ? N'hésitez pas à me contacter !</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Informations de contact</h3>
+          <ul class="contact-list">
+            <li>
+              <strong>Email :</strong>
+              <a href="mailto:valentinsimon6631@gmail.com">valentinsimon6631@gmail.com</a>
+            </li>
+            <li>
+              <strong>GitHub :</strong>
+              <a href="https://github.com/Valentin-sim" target="_blank" rel="noopener">github.com/Valentin-sim</a>
+            </li>
+            <li>
+              <strong>LinkedIn :</strong>
+              <a href="https://www.linkedin.com/in/valentin-simon-594990150" target="_blank" rel="noopener">Valentin Simon</a>
+            </li>
+          </ul>
+          
+          <div class="availability">
+            <p><strong>Disponibilité :</strong> Recherche active d'alternance à partir de 2026</p>
+            <p><strong>Localisation :</strong> Toulouse, France</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Formulaire de contact</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nom complet *</label>
+              <input type="text" id="name" name="name" required placeholder="Jean Dupont" />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="jean.dupont@exemple.fr" />
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Sujet *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Sélectionnez un sujet</option>
+                <option value="alternance">Opportunité d'alternance</option>
+                <option value="projet">Projet de collaboration</option>
+                <option value="question">Question technique</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-submit">Envoyer le message</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Portail Rick & Morty -->
+  <div id="portal-overlay" aria-hidden="true">
+    <div class="portal">
+      <div class="portal-ring"></div>
+      <div class="portal-ring"></div>
+      <div class="portal-ring"></div>
+      <div class="portal-ring"></div>
+      <div class="portal-ring"></div>
+      <div class="portal-center"></div>
+      <div class="portal-spiral"></div>
+      <div class="portal-spiral"></div>
+    </div>
+  </div>
+  
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Valentin Simon — Tous droits réservés.</p>
+    <p class="footer-note">Fait avec passion à Toulouse 🚀</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
