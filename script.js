@@ -80,6 +80,22 @@ navLinks.forEach(a => {
   });
 });
 
+// Intercept clicks on ALL internal links (including buttons)
+const allInternalLinks = $('a[href^="#"]');
+allInternalLinks.forEach(a => {
+  // Skip if already handled by navLinks
+  if (navLinks.includes(a)) return;
+  
+  a.addEventListener("click", (e) => {
+    const hash = a.getAttribute("href");
+    if (hash && hash.startsWith("#") && hash !== "#") {
+      e.preventDefault();
+      const id = hash.slice(1);
+      scrollToTarget(id);
+    }
+  });
+});
+
 // Update aria-current on scroll (optionnel, pour l'accessibilité)
 const io = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
